@@ -1,0 +1,50 @@
+    body {
+      margin: 0;
+      font-family: 'Comic Neue', cursive, sans-serif;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.371), rgba(67, 119, 224, 0.766));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .success-container {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.371), rgba(67, 119, 224, 0.766));
+      border-radius: 20px;
+      padding: 50px 40px;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0, 12, 100, 0.632);
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .success-container img {
+      width: 180px;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .btn-volver {
+      display: inline-block;
+      background-color: #60afeb;
+      color: rgb(0, 0, 0);
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-volver:hover {
+      background-color: #ffffff;
+    }

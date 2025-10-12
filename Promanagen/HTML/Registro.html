@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <img src="../IMAGEN/ChatGPT Image 24 sept 2025, 12_40_01 p.m..png" alt="Logo AdoptaFeliz">
+  <title>Iniciar Sesión - Promanagen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/Inicio1.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="../IMAGEN/ChatGPT Image 24 sept 2025, 12_40_01 p.m..png" alt="Logo AdoptaFeliz">
+    <h1>Bienvenido</h1>
+    <h2>Registro de Promanagen</h2>
+
+    <!-- ✅ Formulario configurado para enviar a PHP -->
+    <form action="../../Promanagen/HTML/PHP/Reguistro.php" method="POST">
+
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="email" id="correo" name="correo" placeholder="Correo: usuario@correo.com" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="name" id="nombre" name="nombre" placeholder="Nombre: jose mendez" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="phone" id="telefono" name="telefono" placeholder="Telefono: 55 344624624" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="ubicacion" name="ubicacion" placeholder="Localidad: CDMX" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="bio" name="bio" placeholder="Profecion: estudiante" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="pass" name="contrasena" placeholder="Ingresa tu contraseña" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="confirm" name="confirmar" placeholder="Confirma tu contraseña" required />
+      </div>
+
+      <div class="extra-options">
+        <a href="Inicio.html">Ya tengo cuenta</a>
+      </div>
+
+      <button type="submit" class="btn-login">REGISTRAR</button>
+    </form>
+  </div>
+</body>
+</html>
+

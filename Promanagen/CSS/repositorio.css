@@ -1,0 +1,194 @@
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117; /* oscuro general tipo GitHub */
+    margin: 0;
+    color: #c9d1d9;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161b22; 
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #58a6ff;
+}
+
+.header-left span {
+    color: #8b949e;
+    font-size: 14px;
+}
+
+.header-right a.btn {
+    background-color: #238636;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(35,134,54,0.4);
+}
+
+.header-right a.btn:hover {
+    background-color: #2ea44f;
+    box-shadow: 0 4px 8px rgba(46,164,79,0.4);
+    transform: translateY(-2px);
+}
+
+/* Contenedor */
+.container {
+    padding: 25px 40px;
+}
+
+/* Cards de repositorio */
+.repositorio {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.repositorio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.repositorio h2 {
+    margin: 0 0 8px 0;
+    color: #58a6ff;
+    font-size: 22px;
+}
+
+.repositorio p {
+    margin: 5px 0;
+    color: #c9d1d9;
+}
+
+.repositorio strong {
+    color: #8b949e;
+}
+
+/* Botones y enlaces estilo GitHub */
+.btn, .repo-actions button, .acciones a {
+    display: inline-block;
+    background-color: #238636;
+    color: #ffffff;
+    padding: 8px 16px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(35,134,54,0.4);
+}
+
+.btn:hover, .repo-actions button:hover, .acciones a:hover {
+    background-color: #2ea44f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(46,164,79,0.4);
+    color: #ffffff;
+}
+
+/* Acciones dentro de repositorios */
+.repo-actions {
+    margin-top: 12px;
+}
+
+/* Dashboard */
+.dashboard {
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    background-color: #161b22;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 0 0 5px #58a6ff;
+}
+
+/* Calendario */
+#calendar {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #161b22;
+    color: #c9d1d9;
+    border-radius: 10px;
+    padding: 15px;
+    height: 600px;
+    border: 1px solid #30363d;
+    overflow-y: auto;
+}
+
+/* Eventos del calendario */
+.fc-event {
+    background-color: #238636;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Toolbar */
+.fc .fc-toolbar-title {
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+.fc .fc-button {
+    background-color: #21262d;
+    color: #c9d1d9;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.fc .fc-button:hover {
+    background-color: #2ea44f;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Días y números del calendario */
+.fc .fc-col-header-cell-cushion {
+    color: #8b949e;
+    font-weight: 500;
+}
+
+.fc .fc-daygrid-day-number {
+    color: #c9d1d9;
+}
+
+.fc .fc-scrollgrid-sync-inner {
+    background-color: #0d1117;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="../IMAGEN/ChatGPT Image 24 sept 2025, 12_40_01 p.m..png" type="image/x-icon">
+  <title>Iniciar Sesión - Promanage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/Inicio1.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="../IMAGEN/ChatGPT Image 24 sept 2025, 12_40_01 p.m..png" alt="Logo Promanage">
+    <h1>Bienvenido</h1>
+    <p class="subtitle">Ingresa a tu cuenta de Promanage</p>
+
+    <form action="../../Promanagen/HTML/PHP/procesar_login.php" method="POST" onsubmit="return validarInicioSesion(event)">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="email" id="correo" name="correo" placeholder="Correo" />
+        <div id="mensajeCorreo" class="validation-message"></div>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" />
+        <div id="mensajeContrasena" class="validation-message"></div>
+      </div>
+
+      <div class="extra-options">
+        <a href="Registro.html">Registrar</a>
+        <a href="Recuperar.html">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <button type="submit" class="btn-login">INICIAR</button>
+    </form>
+  </div>
+
+  <script>
+    function validarInicioSesion(event) {
+      const correo = document.getElementById('correo');
+      const contrasena = document.getElementById('contrasena');
+      const mensajeCorreo = document.getElementById('mensajeCorreo');
+      const mensajeContrasena = document.getElementById('mensajeContrasena');
+
+      let valido = true;
+
+      mensajeCorreo.textContent = '';
+      mensajeContrasena.textContent = '';
+
+      if (!correo.value.trim()) {
+        mensajeCorreo.textContent = 'Por favor, ingresa tu correo.';
+        valido = false;
+      }
+
+      if (!contrasena.value.trim()) {
+        mensajeContrasena.textContent = 'Por favor, ingresa tu contraseña.';
+        valido = false;
+      }
+
+      if (!valido) {
+        event.preventDefault(); 
+      }
+
+      return valido; 
+    }
+  </script>
+</body>
+</html>
+
